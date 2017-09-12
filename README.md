@@ -1,6 +1,6 @@
-# CPUMonitor
+# CPUmonitor
 
-CPUMonitor is a package designed to make it easier to monitor and visualize multiple CPU processes on a single Linux host.
+CPUmonitor is a package designed to make it easier to monitor and visualize multiple CPU processes on a single Linux host.
 
 CPU and Memory use are monitored using Linux's `top` command. As per their documentation, the returned CPU values are defined as:
 *The task's share of the elapsed CPU time since the last screen update, expressed as a percentage of total CPU time. In a true SMP environment, if 'Irix mode' is Off, top will operate in 'Solaris mode' where a task's cpu usage will be divided by the total number of CPUs. You toggle 'Irix/Solaris' modes with the 'I' interactive command.*
@@ -10,13 +10,13 @@ The returned memory values are defined as : *A task's currently used share of av
 ## Installation
 -----
 
-CPUMonitor can be installed using the Julia package manager. If you have a Github account, run the following from the Julia REPL:
+CPUmonitor can be installed using the Julia package manager. If you have a Github account, run the following from the Julia REPL:
 
-    https://github.com/klensink/CPUMonitor.jl.git
+    Pkg.clone(https://github.com/klensink/CPUmonitor.jl.git)
 
 Otherwise run:
 
-    git@github.com:klensink/CPUMonitor.jl.git
+    Pkg.clone(git@github.com:klensink/CPUmonitor.jl.git)
 
 ## Example
 -----

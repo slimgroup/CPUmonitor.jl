@@ -2,7 +2,7 @@ export parselog
 
 function parselog(logfile::String, verbose::Bool)
 
-    verbose && println("CPUMonitor: Begin Parsing Log...")
+    verbose && println("CPUmonitor: Begin Parsing Log...")
     # Read log file as array with " " delim
     log = readdlm(logfile)
 
@@ -23,7 +23,7 @@ function parselog(logfile::String, verbose::Bool)
 
     end
 
-    verbose && println("CPUMonitor: End Parsing Log...")
+    verbose && println("CPUmonitor: End Parsing Log...")
 
     return stat 
 end

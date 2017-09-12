@@ -22,12 +22,12 @@ function track( username::String,
     top_cmd = `top -b -u $username -d $delay -n $iterations`
     grep_cmd = `grep "julia"`
 
-    verbose && println("CPUMonitor: Begin Tracking...")
+    verbose && println("CPUmonitor: Begin Tracking...")
 
     # top -b -u $username -d $delay -n $iterations | grep "julia" > logfile
     @time run(pipeline(pipeline(top_cmd, grep_cmd), stdout = logfile))
    
-    verbose && println("CPUMonitor: End Tracking...")
+    verbose && println("CPUmonitor: End Tracking...")
 
     return logfile
 end

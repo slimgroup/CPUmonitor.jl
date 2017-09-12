@@ -1,4 +1,4 @@
-using CPUMonitor
+using CPUmonitor
 using Base.Test
 
 # write your own tests here

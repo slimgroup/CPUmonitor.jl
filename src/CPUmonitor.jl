@@ -1,4 +1,4 @@
-module CPUMonitor
+module CPUmonitor
     
     # Modules
 
